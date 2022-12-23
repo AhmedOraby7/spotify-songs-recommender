@@ -62,7 +62,8 @@ def page():
                 "",
                 genre_names, index=genre_names.index("Pop"))
         with col1:
-            st.markdown("***Choose features to customize:***")
+            st.markdown("***Tell me your preferences and I will recommend your next songs :)***")
+            st.markdown("***If you do not know what does each attribute mean, please refer to this article [link](https://towardsdatascience.com/what-makes-a-song-likeable-dbfdb7abe404#:~:text=Liveness%3A%20Detects%20the%20presence%20of,overall%20key%20of%20the%20track.)***")
             start_year, end_year = st.slider(
                 'Select the year range',
                 1990, 2019, (2015, 2019)
